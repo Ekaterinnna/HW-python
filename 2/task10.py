@@ -6,8 +6,14 @@
 5 -> 1 0 1 1 0
 2
 """
-
+import random
 n = int(input('Введите количество монет на столе: '))
-
-
-print(min)
+sum_coins = 0
+for i in range(n):
+    coin = random.randrange(2)
+    print (coin, end=' ')
+    sum_coins += coin
+if sum_coins < n/2:
+    print('\n', sum_coins)
+else:
+    print('\n', n - sum_coins)
