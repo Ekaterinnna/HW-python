@@ -9,3 +9,23 @@
 
 -> 5
 """
+
+import random
+N = int(input('Введите N - число элементов в массиве: '))
+A = []
+max = 10
+i = 0
+for i in range(N):
+    A.insert(i, random.randrange(max))
+print(A)
+X = int(input('Введите X: '))
+
+dif = max
+mark = A[0]
+j = 0
+for j in range(N):
+    if abs(X - A[j]) < dif:
+        dif = abs(X - A[j])
+        mark = A[j]
+
+print(mark)
