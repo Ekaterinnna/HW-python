@@ -11,9 +11,10 @@
 import random
 N = int(input('Введите N - число элементов в массиве: '))
 A = []
+max = 10
 
 for i in range(N):
-    A.append(random.randrange(10))
+    A.append(random.randrange(max))
 print(A)
 X = int(input('Введите X: '))
 
