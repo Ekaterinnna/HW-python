@@ -11,13 +11,12 @@
 import random
 N = int(input('Введите N - число элементов в массиве: '))
 A = []
-i = 0
+
 for i in range(N):
-    A.insert(i, random.randrange(10))
+    A.append(random.randrange(10))
 print(A)
 X = int(input('Введите X: '))
 
-j = 0
 count = 0
 for j in range(N):
     if X == A[j]:
