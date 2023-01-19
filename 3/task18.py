@@ -12,20 +12,17 @@
 
 import random
 N = int(input('Введите N - число элементов в массиве: '))
-A = []
 max = 10
-i = 0
-for i in range(N):
-    A.insert(i, random.randrange(max))
+A = random.sample(range(0, max), N)
 print(A)
+
 X = int(input('Введите X: '))
 
-dif = max
-mark = A[0]
-j = 0
-for j in range(N):
-    if abs(X - A[j]) < dif:
-        dif = abs(X - A[j])
-        mark = A[j]
+dif = abs(X - A[0])
+
+for a in A:
+    if abs(X - a) < dif:
+        dif = abs(X - a)
+        mark = a
 
 print(mark)
