@@ -19,5 +19,7 @@ N = set(map(int, input().split()))
 print(f'Введите {m} чисел/а через пробел:', end = ' ')
 M = set(map(int, input().split()))
 
-res = N.intersection(M)
+res = list(N.intersection(M))
+res.sort()
+
 print(*res)
