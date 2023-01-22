@@ -9,3 +9,21 @@
 4 -> 1 2 3 4
 9
 """
+
+import random
+N = int(input('Введите N - число элементов в массиве: '))
+max = 10
+A = []
+for i in range(N):
+    A.append(random.randint(0, max))
+
+
+print(A)
+list_sum = []
+
+for i in range(N):
+    list_sum.append(A[i]+A[i-1]+A[i-2])
+
+print(list_sum)
+list_sum.sort()
+print(list_sum[-1])
