@@ -11,4 +11,4 @@ d = int(input('Введите разность арифметической пр
 n = int(input('Введите количество элементов: '))
 
 for i in range(n):
-    print(a + i*d, end=' ')
+    print(a + i*d, end = ' ')
