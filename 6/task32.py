@@ -6,3 +6,9 @@
 Вывод: [1, 9, 13, 14, 19]
 """
 
+list = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+min = int(input('Введите min: '))
+max = int(input('Введите max: '))
+
+new_list = [a for a in list if (a >= min and a <= max)]
+print(new_list)
