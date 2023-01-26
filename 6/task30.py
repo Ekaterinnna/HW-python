@@ -10,5 +10,5 @@ a = int(input('Введите первый элемент арифметичес
 d = int(input('Введите разность арифметической прогрессии: '))
 n = int(input('Введите количество элементов: '))
 
-for i in range(n):
-    print(a + i*d, end = ' ')
+list = [a + i*d for i in range(n)]
+print(*list)
