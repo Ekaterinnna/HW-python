@@ -11,3 +11,18 @@
 Вывод:
 Парам пам-пам
 """
+vowels = ['а', 'е', 'ё', 'о', 'у', 'э', 'ю', 'я', 'ы', 'и']
+vow_array = []
+
+poem = input("Введите стих: ")
+for line in poem.split():
+    v = 0
+    for letter in line:
+        if letter in vowels:
+            v += 1
+    vow_array.append(v)
+
+if len(set(vow_array)) == 1:
+    print ('Парам пам-пам')
+else:
+    print('Пам парам')
